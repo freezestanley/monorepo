@@ -1,6 +1,6 @@
 {
 	"name": "workspace",
-	"version": "2.0.1",
+	"version": "0.0.0",
 	"description": "> pnpm add add-one --workspace --filter add-two",
 	"main": "index.js",
 	"author": "",
@@ -12,8 +12,6 @@
 		"version-packages": "changeset version"
 	},
 	"dependencies": {
-		"@pks/pkg1": "workspace:^1.0.0",
-		"@pks/pkg2": "workspace:^1.0.0",
 		"babel-cli": "^6.26.0",
 		"babel-preset-env": "^1.7.0",
 		"lodash": "^4.17.21"

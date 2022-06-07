@@ -5,19 +5,21 @@ importers:
   .:
     specifiers:
       '@changesets/cli': ^2.22.0
-      '@pks/pkg1': workspace:^1.0.0
-      '@pks/pkg2': workspace:^1.0.0
       babel-cli: ^6.26.0
       babel-preset-env: ^1.7.0
       lodash: ^4.17.21
     dependencies:
-      '@pks/pkg1': link:packages/pkg1
-      '@pks/pkg2': link:packages/pkg2
       babel-cli: 6.26.0
       babel-preset-env: 1.7.0
       lodash: 4.17.21
     devDependencies:
       '@changesets/cli': 2.22.0
+
+  packages/pkg1:
+    specifiers: {}
+
+  packages/pkg2:
+    specifiers: {}
 
 packages:
 
@@ -2722,7 +2724,7 @@ packages:
     dev: true
 
   /resolve-url/0.2.1:
-    resolution: {integrity: sha1-LGN/53yJOv0qZj/iGqkIAGjiBSo=}
+    resolution: {integrity: sha512-ZuF55hVUQaaczgOIwqWzkEcEidmlD/xl44x1UZnhOXcYuFN2S6+rcxpG+C1N3So0wvNI3DmJICUFfu2SxhBmvg==}
     deprecated: https://github.com/lydell/resolve-url#deprecated
     dev: false
     optional: true
