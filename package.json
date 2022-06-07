@@ -6,7 +6,10 @@
   "author": "",
   "license": "ISC",
   "scripts": {
-		"dev": "npx babel-node --presets env index.js"
+		"dev": "npx babel-node --presets env index.js",
+    "clear": "rimraf 'packages/*/{lib,node_modules}' && rimraf node_modules",
+    "changeset": "changeset",
+    "version-packages": "changeset version"
 	},
 	"dependencies": {
 		"@pks/pkg1": "workspace:^1.0.0",
