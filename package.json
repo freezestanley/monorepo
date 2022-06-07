@@ -1,15 +1,15 @@
 {
-  "name": "workspace",
-  "version": "1.0.0",
-  "description": "> pnpm add add-one --workspace --filter add-two",
-  "main": "index.js",
-  "author": "",
-  "license": "ISC",
-  "scripts": {
+	"name": "workspace",
+	"version": "2.0.0",
+	"description": "> pnpm add add-one --workspace --filter add-two",
+	"main": "index.js",
+	"author": "",
+	"license": "ISC",
+	"scripts": {
 		"dev": "npx babel-node --presets env index.js",
-    "clear": "rimraf 'packages/*/{lib,node_modules}' && rimraf node_modules",
-    "changeset": "changeset",
-    "version-packages": "changeset version"
+		"clear": "rimraf 'packages/*/{lib,node_modules}' && rimraf node_modules",
+		"changeset": "changeset",
+		"version-packages": "changeset version"
 	},
 	"dependencies": {
 		"@pks/pkg1": "workspace:^1.0.0",
